@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DetailActivity"
+    >
+
+    <RelativeLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_detailPhoto"
+            android:layout_marginTop="7dp"
+            android:layout_width="180dp"
+            android:layout_height="300dp"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/civ_detailPhotoChar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/iv_detailPhoto"
+            />
+
+        <TextView
+            android:id="@+id/tv_detailNameChar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/civ_detailPhotoChar"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+           />
+
+        <TextView
+            android:id="@+id/tv_detailFactionTemplate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_detailPhoto"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tv_detailNameChar"
+            android:text="Faction: "
+            />
+
+        <TextView
+            android:id="@+id/tv_detailFactionChar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_detailNameChar"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/tv_detailFactionTemplate" />
+
+        <TextView
+            android:id="@+id/tv_detailPositionTemplate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_detailPhoto"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tv_detailFactionTemplate"
+            android:text="Position: "
+            />
+
+        <TextView
+            android:id="@+id/tv_detailPositionChar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_detailFactionChar"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tv_detailPositionTemplate" />
+
+        <TextView
+            android:id="@+id/tv_detailRankTemplate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_detailPhoto"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tv_detailPositionTemplate"
+            android:text="Rank: "
+            />
+        <TextView
+            android:id="@+id/tv_detailRankChar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_detailPositionChar"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tv_detailTypeTemplate" />
+
+        <TextView
+            android:id="@+id/tv_detailTypeTemplate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_detailPhoto"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tv_detailRankTemplate"
+            android:text="Type: "
+            />
+
+        <TextView
+            android:id="@+id/tv_detailTypeChar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_detailRankChar"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tv_detailTypeTemplate" />
+
+        <TextView
+            android:id="@+id/tv_detailAttributeTemplate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_detailPhoto"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tv_detailTypeTemplate"
+            android:text="Attribute: "
+            />
+
+        <TextView
+            android:id="@+id/tv_detailAttributeChar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_detailTypeChar"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tv_detailAttributeTemplate" />
+
+
+        <TextView
+            android:id="@+id/tv_detailShinsuTemplate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_detailPhoto"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tv_detailAttributeTemplate"
+            android:text="Shinsu: "
+            />
+
+        <TextView
+            android:id="@+id/tv_detailShinsuChar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_detailAttributeChar"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tv_detailShinsuTemplate"/>
+
+
+        <TextView
+            android:id="@+id/tv_detailGenderTemplate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_detailPhoto"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tv_detailShinsuTemplate"
+            android:text="Gender: "
+            />
+
+        <TextView
+            android:id="@+id/tv_detailGenderChar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_detailShinsuChar"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tv_detailGenderTemplate" />
+
+        <TextView
+            android:id="@+id/tv_detailSpeciesTemplate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_detailPhoto"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tv_detailGenderTemplate"
+            android:text="Species: "
+            />
+
+        <TextView
+            android:id="@+id/tv_detailSpeciesChar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_detailGenderChar"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tv_detailSpeciesTemplate"/>
+
+
+
+        <TextView
+            android:id="@+id/tv_detailAgeTemplate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_detailPhoto"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tv_detailSpeciesTemplate"
+            android:text="Age: "
+            />
+
+        <TextView
+            android:id="@+id/tv_detailAgeChar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_detailSpeciesChar"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tv_detailAgeTemplate"/>
+
+        <TextView
+            android:id="@+id/tv_detailDescriptionTemplate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_detailPhoto"
+            android:layout_marginTop="15dp"
+            android:text="Description"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_detailDescriptionChar"
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_detailDescriptionTemplate"/>
+
+        <ImageView
+            android:id="@+id/iv_detailFactionPhoto"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_detailFactionChar"
+            android:layout_below="@+id/tv_detailNameChar"/>
+
+    </RelativeLayout>
+
+</ScrollView>
